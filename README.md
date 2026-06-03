@@ -8,7 +8,7 @@ A personal portfolio site prepared from Deepak Vutla's starter template.
 
 ## Tech Stack
 
-- **Next.js 16** (App Router)
+- **Next.js 14** (App Router)
 - **Tailwind CSS**
 - **Framer Motion** — animations & micro-interactions
 - **React Three Fiber / Three.js** — 3D hero scene
