@@ -223,7 +223,7 @@ export const content = {
     socials: [
       { label: "Email", href: "mailto:your.email@example.com" },
       { label: "GitHub", href: "#" },
-      { label: "LinkedIn", href: "#" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/vishwa-pernapati/" },
       { label: "Resume", href: "/resume.pdf" },
     ],
   },

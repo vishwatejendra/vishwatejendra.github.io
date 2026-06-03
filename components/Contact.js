@@ -127,6 +127,8 @@ export default function Contact() {
           <Magnetic
             key={s.label}
             href={s.href}
+            target={s.href.startsWith("http") ? "_blank" : undefined}
+            rel={s.href.startsWith("http") ? "noreferrer" : undefined}
             className="glass rounded-full px-6 py-3 text-sm transition-colors hover:text-purple-glow"
           >
             {s.label}
