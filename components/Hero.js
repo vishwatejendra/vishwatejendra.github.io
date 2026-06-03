@@ -1,10 +1,6 @@
 "use client";
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import Avatar from "./Avatar";
 import { content } from "@/content";
-
-const Scene3D = dynamic(() => import("./Scene3D"), { ssr: false });
 
 const line = {
   hidden: {},
@@ -25,18 +21,15 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-center overflow-hidden"
+      className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#0d1117]"
     >
-      {/* 3D background */}
-      <div className="absolute inset-0 opacity-90">
-        <Scene3D />
-      </div>
-      {/* ambient gradient wash */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,rgba(139,92,246,0.18),transparent_55%)]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-ink to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.045)_1px,transparent_1px)] bg-[size:72px_72px]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(13,17,23,0.2),rgba(13,17,23,0.92)_62%,#0a0a0a)]" />
+      <div className="pointer-events-none absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-teal-300 via-white/40 to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-ink to-transparent" />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 pt-28 md:grid-cols-[1.2fr_0.8fr] md:px-12">
-        <div>
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-28 md:px-12">
+        <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,15 +86,11 @@ export default function Hero() {
             <a
               href="#contact"
               data-magnetic
-              className="glass rounded-full px-7 py-3.5 text-sm font-semibold transition-colors hover:border-purple-glow/60"
+              className="glass rounded-full px-7 py-3.5 text-sm font-semibold transition-colors hover:border-teal-300/60"
             >
               Start a Project
             </a>
           </motion.div>
-        </div>
-
-        <div className="flex justify-center md:justify-end">
-          <Avatar />
         </div>
       </div>
 
@@ -112,7 +101,7 @@ export default function Hero() {
         className="absolute bottom-7 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-white/40"
       >
         Scroll
-        <span className="h-9 w-[1px] bg-gradient-to-b from-purple-glow to-transparent" />
+        <span className="h-9 w-[1px] bg-gradient-to-b from-teal-300 to-transparent" />
       </motion.div>
     </section>
   );
