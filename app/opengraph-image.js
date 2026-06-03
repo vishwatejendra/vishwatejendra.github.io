@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Your Name — Portfolio";
+export const alt = "Vishwa Pernapati - Portfolio";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -30,7 +30,7 @@ export default function OG() {
             fontWeight: 700,
           }}
         >
-          Your Name<span style={{ color: "#fff" }}>.</span>
+          Vishwa Pernapati<span style={{ color: "#fff" }}>.</span>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -43,7 +43,7 @@ export default function OG() {
               letterSpacing: "-2px",
             }}
           >
-            Building digital experiences
+            Building useful digital work
           </div>
           <div
             style={{
@@ -56,7 +56,7 @@ export default function OG() {
               color: "transparent",
             }}
           >
-            people remember.
+            with care.
           </div>
         </div>
 
@@ -77,7 +77,7 @@ export default function OG() {
               color: "#fff",
             }}
           >
-            Creative Developer
+            Portfolio
           </span>
           <span style={{ color: "#34d399" }}>● Available for work</span>
         </div>

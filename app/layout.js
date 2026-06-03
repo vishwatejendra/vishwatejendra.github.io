@@ -13,41 +13,38 @@ const display = Sora({
   variable: "--font-display",
 });
 
-// ← update SITE_URL to your real domain when you deploy
 const SITE_URL = "https://your-site.vercel.app";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Your Name — Portfolio",
-    template: "%s · Your Name",
+    default: "Vishwa Pernapati - Portfolio",
+    template: "%s · Vishwa Pernapati",
   },
   description:
-    "A personal portfolio — building digital experiences that people remember.",
+    "The personal portfolio of Vishwa Pernapati.",
   keywords: [
     "Portfolio",
-    "Developer",
-    "Designer",
-    "React",
-    "Next.js",
-    "Web Developer",
-    "Creative",
+    "Vishwa Pernapati",
+    "Projects",
+    "Resume",
+    "Personal Website",
   ],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  authors: [{ name: "Vishwa Pernapati" }],
+  creator: "Vishwa Pernapati",
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "Your Name — Portfolio",
+    title: "Vishwa Pernapati - Portfolio",
     description:
-      "Building digital experiences that people remember.",
-    siteName: "Your Name",
+      "The personal portfolio of Vishwa Pernapati.",
+    siteName: "Vishwa Pernapati",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name — Portfolio",
+    title: "Vishwa Pernapati - Portfolio",
     description:
-      "Building digital experiences that people remember.",
+      "The personal portfolio of Vishwa Pernapati.",
   },
   robots: {
     index: true,
@@ -59,16 +56,16 @@ export const metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Your Name",
+  name: "Vishwa Pernapati",
   url: SITE_URL,
-  jobTitle: "Creative Developer",
+  jobTitle: "Portfolio Owner",
   description:
-    "A personal portfolio — building digital experiences that people remember.",
+    "The personal portfolio of Vishwa Pernapati.",
   knowsAbout: [
-    "Web Development",
-    "React",
-    "Next.js",
-    "Design",
+    "Projects",
+    "Communication",
+    "Problem Solving",
+    "Digital Work",
   ],
 };
 

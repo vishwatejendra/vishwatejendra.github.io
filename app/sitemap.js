@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const base = "https://deepak.dev"; // ← update to your real domain when you deploy
+  const base = "https://your-site.vercel.app";
   return [
     {
       url: base,

@@ -1,6 +1,6 @@
-# Portfolio Website — Free Starter Template
+# Vishwa Pernapati Portfolio
 
-A premium, interactive personal portfolio — built as an award-style storytelling experience. Fork it, make it yours, and ship it for free.
+A personal portfolio site prepared from Deepak Vutla's starter template.
 
 > ✨ All your content lives in one file: **[`content.js`](content.js)**. No need to touch the components.
 >
@@ -8,7 +8,7 @@ A premium, interactive personal portfolio — built as an award-style storytelli
 
 ## Tech Stack
 
-- **Next.js 14** (App Router)
+- **Next.js 16** (App Router)
 - **Tailwind CSS**
 - **Framer Motion** — animations & micro-interactions
 - **React Three Fiber / Three.js** — 3D hero scene
