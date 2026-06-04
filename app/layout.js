@@ -62,7 +62,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Vishwa Pernapati",
   url: SITE_URL,
-  jobTitle: "Lead Azure AI Engineer",
+  jobTitle: "Azure AI Engineer",
   description:
     "AI Engineer focused on Azure OpenAI, enterprise RAG systems, .NET, and Oracle-backed intelligent applications.",
   knowsAbout: [

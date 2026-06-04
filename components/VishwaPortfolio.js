@@ -32,7 +32,7 @@ const experiences = [
   {
     period: "Jun 2025 - Present",
     location: "Plano, TX",
-    role: "Lead Azure AI Engineer - .NET, RAG & Copilot Systems",
+    role: "Azure AI Engineer - .NET, RAG & Copilot Systems",
     company: "Toyota Motor North America",
     points: [
       "Architecting Toyota GPT-style internal copilots using Azure OpenAI, Azure AI Search, React, .NET Core, and Oracle-backed APIs.",
@@ -43,7 +43,7 @@ const experiences = [
   {
     period: "Aug 2023 - May 2025",
     location: "Remote",
-    role: "Lead Full Stack Developer - Azure AI & GenAI",
+    role: "Full Stack Developer - Azure AI & GenAI",
     company: "Pioneer Natural Resources",
     points: [
       "Built .NET Core APIs integrated with Oracle DB to expose enterprise data to Azure OpenAI and LangChain workflows.",
@@ -54,7 +54,7 @@ const experiences = [
   {
     period: "Sep 2021 - Jun 2023",
     location: "India",
-    role: "Lead Full Stack Engineer - .NET, React & AI Solutions",
+    role: "Full Stack Engineer - .NET, React & AI Solutions",
     company: "Proficient INC.",
     points: [
       "Built ASP.NET Core Web APIs backed by Oracle DB serving 100K+ daily requests with connection pooling and batch processing.",
@@ -65,7 +65,7 @@ const experiences = [
   {
     period: "2012 - 2021",
     location: "USA & India",
-    role: ".NET / Oracle Engineering Leadership",
+    role: ".NET / Oracle Engineering",
     company: "Conduent, Unisys, Polaris / Citibank",
     points: [
       "Built healthcare, finance, and reconciliation systems using .NET, Oracle PL/SQL, Angular, Docker, AKS, and enterprise messaging.",
@@ -189,7 +189,7 @@ export default function VishwaPortfolio() {
             <div className="hero-ambient" />
             <div className="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-center">
               <div>
-                <div className="terminal-label mb-5">open to AI engineering leadership</div>
+                <div className="terminal-label mb-5">open to AI engineering opportunities</div>
                 <h1 className="font-display text-6xl font-extrabold leading-[0.92] tracking-tight md:text-8xl">
                   Vishwa
                   <span className="block text-gradient">Pernapati</span>
@@ -212,7 +212,7 @@ export default function VishwaPortfolio() {
                 </div>
                 <div className="space-y-4 p-6 font-mono text-sm muted-copy md:text-base">
                   <p><span className="text-teal-200">$</span> cat profile.json</p>
-                  <p><span className="soft-copy">-&gt;</span> role: Lead Azure AI Engineer</p>
+                  <p><span className="soft-copy">-&gt;</span> role: Azure AI Engineer</p>
                   <p><span className="soft-copy">-&gt;</span> stack: [Azure OpenAI, .NET, Oracle, RAG]</p>
                   <p><span className="soft-copy">-&gt;</span> focus: Enterprise copilots and reliable AI systems</p>
                   <p><span className="soft-copy">-&gt;</span> status: Open to meaningful AI work</p>
@@ -316,7 +316,7 @@ export default function VishwaPortfolio() {
               <div className="glass rounded-3xl p-6 font-mono text-sm muted-copy">
                 <p>$ cat resume.pdf --info</p>
                 <p className="mt-4">-&gt; name: Vishwa Pernapati</p>
-                <p>-&gt; role: Lead Azure AI Engineer</p>
+                <p>-&gt; role: Azure AI Engineer</p>
                 <p>-&gt; format: PDF · up-to-date</p>
                 <p>-&gt; focus: Enterprise AI / RAG / .NET / Oracle</p>
               </div>
@@ -346,7 +346,7 @@ export default function VishwaPortfolio() {
                 <div className="terminal-label">07 / Contact</div>
                 <h2 className="mt-4 font-display text-4xl font-bold md:text-6xl">Let's connect.</h2>
                 <p className="mt-5 max-w-xl text-lg leading-8 section-copy">
-                  Open to AI engineering, lead engineer, and enterprise GenAI roles where reliable systems matter.
+                  Open to AI engineering, Azure AI, and enterprise GenAI roles where reliable systems matter.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a className="primary-cta" href="mailto:vishwapernapati1@gmail.com">Email Me</a>
@@ -359,7 +359,7 @@ export default function VishwaPortfolio() {
                 <p>$ vishwa --status</p>
                 <p className="mt-4">-&gt; open_to_work: Yes</p>
                 <p>-&gt; location: United States</p>
-                <p>-&gt; target_roles: [AI Engineer, Azure AI Engineer, Lead Full Stack Engineer]</p>
+                <p>-&gt; target_roles: [AI Engineer, Azure AI Engineer, Full Stack Engineer]</p>
                 <p>-&gt; email: vishwapernapati1@gmail.com</p>
               </div>
             </div>
