@@ -190,10 +190,12 @@ export const content = {
       desc: "Write each project as a challenge, process, solution, and result.",
     },
     {
-      title: "Resume Link",
+      title: "View My Resume",
       tag: "Career",
       emoji: "03",
-      desc: "Add a polished resume PDF to the site once the latest version is ready.",
+      desc: "Open my AI Engineer resume in a clean PDF view with enterprise AI, Azure, .NET, and Oracle experience.",
+      href: "/resume.pdf",
+      cta: "Open Resume",
     },
     {
       title: "Contact Setup",
