@@ -108,7 +108,7 @@ function SectionHeading({ id, number, label, title, children }) {
         <div className="terminal-label">{number} / {label}</div>
         <div>
           <h2 className="font-display text-4xl font-bold leading-tight md:text-6xl">{title}</h2>
-          {children && <p className="mt-4 max-w-2xl text-lg leading-8 text-white/55">{children}</p>}
+          {children && <p className="mt-4 max-w-2xl text-lg leading-8 section-copy">{children}</p>}
         </div>
       </div>
     </section>
@@ -169,14 +169,14 @@ export default function VishwaPortfolio() {
   return (
     <>
       <div className="site-shell min-h-screen text-white">
-        <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-[#05070a]/60 backdrop-blur-2xl">
+        <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/16 bg-[#07111b]/72 shadow-lg shadow-black/20 backdrop-blur-2xl">
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-            <a href="#top" className="font-mono text-sm uppercase tracking-[0.24em] text-white/75">
+            <a href="#top" className="font-mono text-sm uppercase tracking-[0.24em] muted-copy">
               // Vishwa.Pernapati
             </a>
             <div className="hidden items-center gap-1 md:flex">
               {nav.map(([label, id]) => (
-                <a key={id} href={`#${id}`} className="rounded-full px-3 py-2 text-xs text-white/55 transition hover:bg-white/8 hover:text-white">
+                <a key={id} href={`#${id}`} className="rounded-full px-3 py-2 text-xs section-copy transition hover:bg-white/8 hover:text-white">
                   {label}
                 </a>
               ))}
@@ -194,7 +194,7 @@ export default function VishwaPortfolio() {
                   Vishwa
                   <span className="block text-gradient">Pernapati</span>
                 </h1>
-                <p className="mt-7 max-w-2xl text-xl leading-9 text-white/62">
+                <p className="mt-7 max-w-2xl text-xl leading-9 section-copy">
                   AI Engineer specializing in enterprise RAG systems, Azure OpenAI, .NET microservices, and Oracle-backed intelligent applications.
                 </p>
                 <div className="mt-9 flex flex-wrap gap-4">
@@ -203,18 +203,19 @@ export default function VishwaPortfolio() {
                 </div>
               </div>
 
-              <div className="glass terminal-window overflow-hidden rounded-[28px]">
+              <div className="glass terminal-window relative overflow-hidden rounded-[28px]">
+                <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/70 to-transparent" />
                 <div className="flex gap-2 border-b border-white/10 px-5 py-4">
                   <span className="h-3 w-3 rounded-full bg-red-400/70" />
                   <span className="h-3 w-3 rounded-full bg-yellow-300/70" />
                   <span className="h-3 w-3 rounded-full bg-emerald-300/70" />
                 </div>
-                <div className="space-y-4 p-6 font-mono text-sm text-white/75">
+                <div className="space-y-4 p-6 font-mono text-sm muted-copy md:text-base">
                   <p><span className="text-teal-200">$</span> cat profile.json</p>
-                  <p><span className="text-white/35">-&gt;</span> role: Lead Azure AI Engineer</p>
-                  <p><span className="text-white/35">-&gt;</span> stack: [Azure OpenAI, .NET, Oracle, RAG]</p>
-                  <p><span className="text-white/35">-&gt;</span> focus: Enterprise copilots and reliable AI systems</p>
-                  <p><span className="text-white/35">-&gt;</span> status: Open to meaningful AI work</p>
+                  <p><span className="soft-copy">-&gt;</span> role: Lead Azure AI Engineer</p>
+                  <p><span className="soft-copy">-&gt;</span> stack: [Azure OpenAI, .NET, Oracle, RAG]</p>
+                  <p><span className="soft-copy">-&gt;</span> focus: Enterprise copilots and reliable AI systems</p>
+                  <p><span className="soft-copy">-&gt;</span> status: Open to meaningful AI work</p>
                 </div>
               </div>
             </div>
@@ -224,7 +225,7 @@ export default function VishwaPortfolio() {
             {stats.map(([value, label]) => (
               <div key={label} className="glass rounded-3xl p-6">
                 <div className="font-display text-4xl font-bold">{value}</div>
-                <div className="mt-2 text-sm text-white/48">{label}</div>
+                <div className="mt-2 text-sm soft-copy">{label}</div>
               </div>
             ))}
           </section>
@@ -238,18 +239,18 @@ export default function VishwaPortfolio() {
               <div className="terminal-label">02 / Experience</div>
               <div>
                 <h2 className="font-display text-4xl font-bold md:text-6xl">Where I have built at scale.</h2>
-                <p className="mt-4 max-w-2xl text-lg leading-8 text-white/55">Enterprise AI, cloud, Oracle data systems, and full-stack platforms across regulated industries.</p>
+                <p className="mt-4 max-w-2xl text-lg leading-8 section-copy">Enterprise AI, cloud, Oracle data systems, and full-stack platforms across regulated industries.</p>
               </div>
             </div>
             <div className="space-y-5">
               {experiences.map((item) => (
                 <article key={item.role} className="premium-card rounded-3xl p-6 md:p-8">
-                  <div className="flex flex-wrap justify-between gap-3 text-sm text-white/45">
+                  <div className="flex flex-wrap justify-between gap-3 text-sm soft-copy">
                     <span>{item.period} · {item.location}</span>
                     <span>{item.company}</span>
                   </div>
                   <h3 className="mt-3 font-display text-2xl font-semibold">{item.role}</h3>
-                  <ul className="mt-5 space-y-3 text-white/62">
+                  <ul className="mt-5 space-y-3 section-copy">
                     {item.points.map((point) => <li key={point}>+ {point}</li>)}
                   </ul>
                 </article>
@@ -262,7 +263,7 @@ export default function VishwaPortfolio() {
               <div className="terminal-label">03 / Skills</div>
               <div>
                 <h2 className="font-display text-4xl font-bold md:text-6xl">My AI engineering stack.</h2>
-                <p className="mt-4 max-w-2xl text-lg leading-8 text-white/55">Tools I use to connect models, data, APIs, evaluation, and production delivery.</p>
+                <p className="mt-4 max-w-2xl text-lg leading-8 section-copy">Tools I use to connect models, data, APIs, evaluation, and production delivery.</p>
               </div>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -282,15 +283,15 @@ export default function VishwaPortfolio() {
               <div className="terminal-label">04 / Projects</div>
               <div>
                 <h2 className="font-display text-4xl font-bold md:text-6xl">AI systems and delivery work.</h2>
-                <p className="mt-4 max-w-2xl text-lg leading-8 text-white/55">A portfolio view of the kinds of enterprise problems I solve.</p>
+                <p className="mt-4 max-w-2xl text-lg leading-8 section-copy">A portfolio view of the kinds of enterprise problems I solve.</p>
               </div>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
               {projects.map((project) => (
                 <article key={project.title} className="premium-card rounded-3xl p-7">
-                  <div className="text-5xl font-light text-white/85">{project.number}</div>
+                  <div className="text-5xl font-light text-white/95">{project.number}</div>
                   <h3 className="mt-8 font-display text-2xl font-semibold">{project.title}</h3>
-                  <p className="mt-4 leading-7 text-white/55">{project.text}</p>
+                  <p className="mt-4 leading-7 section-copy">{project.text}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {project.tags.map((tag) => <span key={tag} className="chip">{tag}</span>)}
                   </div>
@@ -304,7 +305,7 @@ export default function VishwaPortfolio() {
               <div>
                 <div className="terminal-label">05 / Resume</div>
                 <h2 className="mt-4 font-display text-4xl font-bold md:text-6xl">My Resume</h2>
-                <p className="mt-4 max-w-2xl text-lg leading-8 text-white/58">
+                <p className="mt-4 max-w-2xl text-lg leading-8 section-copy">
                   A full overview of my enterprise AI, Azure, .NET, Oracle, and full-stack engineering background.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-4">
@@ -312,7 +313,7 @@ export default function VishwaPortfolio() {
                   <a className="secondary-cta" href="/resume.pdf" download>Download PDF</a>
                 </div>
               </div>
-              <div className="glass rounded-3xl p-6 font-mono text-sm text-white/68">
+              <div className="glass rounded-3xl p-6 font-mono text-sm muted-copy">
                 <p>$ cat resume.pdf --info</p>
                 <p className="mt-4">-&gt; name: Vishwa Pernapati</p>
                 <p>-&gt; role: Lead Azure AI Engineer</p>
@@ -333,7 +334,7 @@ export default function VishwaPortfolio() {
               {thoughts.map(([title, text]) => (
                 <article key={title} className="premium-card rounded-3xl p-7">
                   <div className="terminal-label">{title}</div>
-                  <p className="mt-5 text-lg leading-8 text-white/68">{text}</p>
+                  <p className="mt-5 text-lg leading-8 muted-copy">{text}</p>
                 </article>
               ))}
             </div>
@@ -344,7 +345,7 @@ export default function VishwaPortfolio() {
               <div>
                 <div className="terminal-label">07 / Contact</div>
                 <h2 className="mt-4 font-display text-4xl font-bold md:text-6xl">Let's connect.</h2>
-                <p className="mt-5 max-w-xl text-lg leading-8 text-white/55">
+                <p className="mt-5 max-w-xl text-lg leading-8 section-copy">
                   Open to AI engineering, lead engineer, and enterprise GenAI roles where reliable systems matter.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -353,7 +354,8 @@ export default function VishwaPortfolio() {
                   <a className="secondary-cta" href="https://github.com/vishwatejendra" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
               </div>
-              <div className="glass rounded-[28px] p-6 font-mono text-sm text-white/68">
+              <div className="glass relative overflow-hidden rounded-[28px] p-6 font-mono text-sm muted-copy md:text-base">
+                <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/70 to-transparent" />
                 <p>$ vishwa --status</p>
                 <p className="mt-4">-&gt; open_to_work: Yes</p>
                 <p>-&gt; location: United States</p>
