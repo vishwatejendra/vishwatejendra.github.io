@@ -22,13 +22,17 @@ export const metadata = {
     template: "%s · Vishwa Pernapati",
   },
   description:
-    "The personal portfolio of Vishwa Pernapati.",
+    "AI Engineer portfolio for Vishwa Pernapati, focused on Azure OpenAI, enterprise RAG systems, .NET, and Oracle-backed intelligent applications.",
   keywords: [
     "Portfolio",
     "Vishwa Pernapati",
     "Projects",
     "Resume",
-    "Personal Website",
+    "AI Engineer",
+    "Azure OpenAI",
+    ".NET",
+    "Oracle",
+    "RAG",
   ],
   authors: [{ name: "Vishwa Pernapati" }],
   creator: "Vishwa Pernapati",
@@ -37,14 +41,14 @@ export const metadata = {
     url: SITE_URL,
     title: "Vishwa Pernapati - Portfolio",
     description:
-      "The personal portfolio of Vishwa Pernapati.",
+      "AI Engineer focused on Azure OpenAI, enterprise RAG systems, .NET, and Oracle-backed intelligent applications.",
     siteName: "Vishwa Pernapati",
   },
   twitter: {
     card: "summary_large_image",
     title: "Vishwa Pernapati - Portfolio",
     description:
-      "The personal portfolio of Vishwa Pernapati.",
+      "AI Engineer focused on Azure OpenAI, enterprise RAG systems, .NET, and Oracle-backed intelligent applications.",
   },
   robots: {
     index: true,
@@ -58,14 +62,15 @@ const jsonLd = {
   "@type": "Person",
   name: "Vishwa Pernapati",
   url: SITE_URL,
-  jobTitle: "Portfolio Owner",
+  jobTitle: "Lead Azure AI Engineer",
   description:
-    "The personal portfolio of Vishwa Pernapati.",
+    "AI Engineer focused on Azure OpenAI, enterprise RAG systems, .NET, and Oracle-backed intelligent applications.",
   knowsAbout: [
-    "Projects",
-    "Communication",
-    "Problem Solving",
-    "Digital Work",
+    "Azure OpenAI",
+    "RAG Pipelines",
+    ".NET",
+    "Oracle Database",
+    "Enterprise AI",
   ],
 };
 
