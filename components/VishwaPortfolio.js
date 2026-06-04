@@ -14,9 +14,9 @@ const nav = [
 
 const stats = [
   ["13+", "Years Experience"],
-  ["10K+", "AI Queries / Month"],
-  ["50K+", "Docs Indexed"],
-  ["22%", "Accuracy Lift"],
+  ["100K+", "Daily API Requests"],
+  ["70%", "Query Performance Gain"],
+  ["50%", "Review Time Reduced"],
 ];
 
 const stack = [
