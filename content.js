@@ -224,7 +224,7 @@ export const content = {
     email: "your.email@example.com",
     socials: [
       { label: "Email", href: "mailto:your.email@example.com" },
-      { label: "GitHub", href: "#" },
+      { label: "GitHub", href: "https://github.com/vishwatejendra" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/vishwa-pernapati/" },
       { label: "Resume", href: "/resume.pdf" },
     ],
