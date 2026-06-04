@@ -13,7 +13,7 @@ const display = Sora({
   variable: "--font-display",
 });
 
-const SITE_URL = "https://your-site.vercel.app";
+const SITE_URL = "https://vishwatejendra.github.io";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

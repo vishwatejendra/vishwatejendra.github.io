@@ -44,6 +44,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deploy
 
-Optimized for [Vercel](https://vercel.com). After deploying, update the
-`SITE_URL` / domain placeholders in `app/layout.js`, `app/robots.js`, and
-`app/sitemap.js` to your real domain.
+This portfolio is configured for GitHub Pages as a static Next.js export.
+For the clean personal URL `https://vishwatejendra.github.io`, publish it to a
+GitHub repository named `vishwatejendra.github.io` and enable GitHub Pages.
