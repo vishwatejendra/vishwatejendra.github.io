@@ -95,14 +95,14 @@ export default function Contact() {
             name="name"
             required
             placeholder="Your name"
-            className="interactive rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-purple-glow/60"
+            className="interactive glass-input rounded-xl px-4 py-3 text-sm outline-none focus:border-teal-200/60"
           />
           <input
             name="email"
             type="email"
             required
             placeholder="Email"
-            className="interactive rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-purple-glow/60"
+            className="interactive glass-input rounded-xl px-4 py-3 text-sm outline-none focus:border-teal-200/60"
           />
         </div>
         <textarea
@@ -110,12 +110,12 @@ export default function Contact() {
           required
           rows={4}
           placeholder="Tell me about it…"
-          className="interactive mt-4 w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-purple-glow/60"
+          className="interactive glass-input mt-4 w-full resize-none rounded-xl px-4 py-3 text-sm outline-none focus:border-teal-200/60"
         />
         <button
           type="submit"
           data-magnetic
-          className="interactive mt-5 w-full rounded-xl bg-white py-3.5 text-sm font-semibold text-ink transition-transform hover:scale-[1.01]"
+          className="interactive mt-5 w-full rounded-xl bg-white py-3.5 text-sm font-semibold text-ink shadow-lg shadow-black/20 transition-transform hover:scale-[1.01]"
         >
           {sent ? "Opening your mail app… ✦" : "Send Message →"}
         </button>
@@ -129,7 +129,7 @@ export default function Contact() {
             href={s.href}
             target={s.href.startsWith("http") ? "_blank" : undefined}
             rel={s.href.startsWith("http") ? "noreferrer" : undefined}
-            className="glass rounded-full px-6 py-3 text-sm transition-colors hover:text-purple-glow"
+            className="glass rounded-full px-6 py-3 text-sm transition-colors hover:text-teal-200"
           >
             {s.label}
           </Magnetic>

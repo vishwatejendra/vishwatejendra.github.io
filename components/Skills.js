@@ -29,7 +29,7 @@ export default function Skills() {
 
       <div
         ref={box}
-        className="relative mt-14 h-[460px] w-full overflow-hidden rounded-3xl border border-white/8 bg-gradient-to-b from-white/[0.03] to-transparent md:h-[520px]"
+        className="premium-card relative mt-14 h-[460px] w-full overflow-hidden rounded-3xl md:h-[520px]"
       >
         {/* connection lines */}
         <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="none">

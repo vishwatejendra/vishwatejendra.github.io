@@ -59,10 +59,10 @@ export default function Experiments() {
               >
                 <CardTag
                   href={e.href}
-                  className={`interactive group relative block h-full w-full overflow-hidden rounded-2xl border p-6 transition-colors ${
+                  className={`interactive premium-card group relative block h-full w-full overflow-hidden rounded-2xl p-6 transition-colors ${
                     e.href
-                      ? "border-teal-300/45 bg-teal-300/[0.045] hover:border-teal-200/80"
-                      : "border-white/8 bg-white/[0.025]"
+                      ? "ring-1 ring-teal-200/25"
+                      : ""
                   }`}
                 >
                   <div className="absolute -right-6 -top-6 text-7xl opacity-10 transition-all duration-500 group-hover:scale-125 group-hover:opacity-20">
@@ -95,7 +95,7 @@ export default function Experiments() {
 
       {resumeOpen && (
         <motion.div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/55 px-4 py-6 backdrop-blur-md md:px-8"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/45 px-4 py-6 backdrop-blur-xl md:px-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -105,13 +105,13 @@ export default function Experiments() {
           onClick={() => setResumeOpen(false)}
         >
           <motion.div
-            className="relative flex h-[88svh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/14 bg-[#0b0f14]/92 shadow-2xl shadow-black/50"
+            className="pdf-glass-shell relative flex h-[90svh] w-full max-w-6xl flex-col overflow-hidden rounded-[1.75rem]"
             initial={{ opacity: 0, y: 24, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.24, ease: "easeOut" }}
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="flex items-center justify-between gap-4 border-b border-white/10 px-4 py-3 md:px-5">
+            <div className="flex items-center justify-between gap-4 border-b border-white/12 px-5 py-4 md:px-6">
               <div>
                 <p className="text-[10px] uppercase tracking-[0.26em] text-teal-200/65">
                   Resume Preview
@@ -123,19 +123,21 @@ export default function Experiments() {
               <button
                 type="button"
                 onClick={() => setResumeOpen(false)}
-                className="interactive grid h-10 w-10 place-items-center rounded-full border border-white/12 bg-white/8 text-xl leading-none text-white/80 transition-colors hover:border-teal-200/70 hover:text-white"
+                className="interactive glass grid h-11 w-11 place-items-center rounded-full text-xl leading-none text-white/80 transition-colors hover:border-teal-200/70 hover:text-white"
                 aria-label="Close resume preview"
               >
                 ×
               </button>
             </div>
 
-            <div className="min-h-0 flex-1 bg-white/95 p-2 md:p-4">
+            <div className="min-h-0 flex-1 p-3 md:p-5">
+              <div className="pdf-paper h-full overflow-hidden rounded-2xl p-2 md:p-3">
               <iframe
                 title="Vishwa Pernapati resume"
-                src="/resume.pdf#toolbar=1&navpanes=0&view=FitH"
+                src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
                 className="h-full w-full rounded-xl border-0 bg-white"
               />
+              </div>
             </div>
           </motion.div>
         </motion.div>

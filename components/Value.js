@@ -43,7 +43,7 @@ export default function Value() {
             href={v.resumeFile}
             download
             data-magnetic
-            className="interactive group inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-ink transition-transform hover:scale-[1.03]"
+            className="interactive group inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-ink shadow-lg shadow-black/20 transition-transform hover:scale-[1.03]"
           >
             <span>Download Résumé</span>
             <span className="transition-transform group-hover:translate-y-0.5">↓</span>
@@ -57,13 +57,10 @@ export default function Value() {
             <motion.div
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.02] p-8 md:p-9"
+              className="premium-card group relative flex h-full flex-col overflow-hidden rounded-3xl p-8 md:p-9"
             >
-              {/* glow accent */}
-              <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-purple/20 blur-3xl transition-opacity duration-500 group-hover:opacity-100 md:opacity-0" />
-
               <div className="relative flex h-full flex-col">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-purple to-purple-electric text-xl text-white shadow-lg shadow-purple/30">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-xl text-white shadow-lg shadow-black/20 backdrop-blur">
                   {s.icon}
                 </div>
                 <h3 className="mt-6 font-display text-2xl font-semibold">
@@ -85,8 +82,8 @@ export default function Value() {
 
                 {/* outcome metric — pinned to bottom */}
                 <div className="mt-auto pt-6">
-                  <div className="flex items-center gap-3 rounded-xl border border-purple/20 bg-purple/[0.06] px-4 py-3">
-                    <span className="text-purple-glow">↗</span>
+                  <div className="flex items-center gap-3 rounded-xl border border-teal-200/20 bg-teal-200/[0.06] px-4 py-3">
+                    <span className="text-teal-200">↗</span>
                     <span className="text-sm font-medium text-white/85">
                       {s.metric}
                     </span>
@@ -100,7 +97,7 @@ export default function Value() {
 
       {/* closing value statement */}
       <Reveal delay={0.1}>
-        <div className="mt-12 rounded-3xl border border-purple/20 bg-gradient-to-r from-purple/[0.08] to-transparent p-8 md:p-10">
+        <div className="premium-card mt-12 rounded-3xl p-8 md:p-10">
           <p className="font-display text-xl font-medium leading-relaxed text-white/85 md:text-2xl">
             {v.closingLine}
           </p>

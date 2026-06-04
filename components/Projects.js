@@ -24,13 +24,13 @@ function Card({ p, onOpen }) {
       onMouseEnter={() => window.dispatchEvent(new Event("project-hover"))}
       onMouseLeave={() => setT({ rx: 0, ry: 0 })}
       onClick={() => onOpen(p)}
-      className="interactive group relative block w-full overflow-hidden rounded-3xl border border-white/8 p-8 text-left"
+      className="interactive premium-card group relative block w-full overflow-hidden rounded-3xl p-8 text-left"
       style={{
         transform: `perspective(900px) rotateX(${t.rx}deg) rotateY(${t.ry}deg)`,
         transformStyle: "preserve-3d",
         transition: "transform .2s ease-out",
         background:
-          "radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(168,85,247,0.12), transparent 40%), rgba(255,255,255,0.025)",
+          "radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(125,211,252,0.12), transparent 42%), rgba(255,255,255,0.025)",
       }}
     >
       <div
@@ -70,7 +70,7 @@ export default function Projects() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-[200] flex items-start justify-center overflow-y-auto bg-black/70 p-4 backdrop-blur-md md:p-10"
+            className="fixed inset-0 z-[200] flex items-start justify-center overflow-y-auto bg-black/55 p-4 backdrop-blur-xl md:p-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -82,7 +82,7 @@ export default function Projects() {
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 40, opacity: 0, scale: 0.97 }}
               transition={{ ease: [0.22, 1, 0.36, 1], duration: 0.5 }}
-              className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-charcoal"
+              className="pdf-glass-shell relative w-full max-w-3xl overflow-hidden rounded-3xl"
             >
               <div
                 className="flex h-56 items-center justify-center text-7xl"
@@ -149,7 +149,7 @@ export default function Projects() {
                     {open.results.map((r) => (
                       <span
                         key={r}
-                        className="glass rounded-full px-4 py-2 text-sm"
+                    className="glass rounded-full px-4 py-2 text-sm"
                       >
                         ✦ {r}
                       </span>
@@ -165,7 +165,7 @@ export default function Projects() {
                     {open.stack.map((s) => (
                       <span
                         key={s}
-                        className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-white/70"
+                        className="glass rounded-full px-3 py-1.5 text-xs text-white/70"
                       >
                         {s}
                       </span>

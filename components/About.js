@@ -70,10 +70,10 @@ export default function About() {
       {/* timeline — single left rail, content cards */}
       <div ref={ref} className="relative mt-24">
         {/* the rail */}
-        <div className="absolute left-[7px] top-2 h-[calc(100%-1rem)] w-[2px] bg-white/8 md:left-[calc(8rem+7px)]">
+        <div className="absolute left-[7px] top-2 h-[calc(100%-1rem)] w-[2px] bg-white/10 md:left-[calc(8rem+7px)]">
           <motion.div
             style={{ height: lineH }}
-            className="w-full bg-gradient-to-b from-purple-glow via-purple to-warm"
+            className="w-full bg-gradient-to-b from-teal-300 via-purple-glow to-warm"
           />
         </div>
 
@@ -90,13 +90,13 @@ export default function About() {
 
                 {/* node */}
                 <div className="relative flex justify-start md:justify-center">
-                  <span className="mt-2.5 h-4 w-4 rounded-full border-2 border-purple-glow/40 bg-ink transition-all duration-300 group-hover:border-purple-glow group-hover:shadow-[0_0_18px_#c084fc]">
-                    <span className="absolute inset-0 m-auto h-1.5 w-1.5 rounded-full bg-purple-glow opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <span className="mt-2.5 h-4 w-4 rounded-full border-2 border-teal-200/40 bg-ink transition-all duration-300 group-hover:border-teal-200 group-hover:shadow-[0_0_18px_rgba(125,211,252,0.75)]">
+                    <span className="absolute inset-0 m-auto h-1.5 w-1.5 rounded-full bg-teal-200 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   </span>
                 </div>
 
                 {/* card */}
-                <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] p-6 transition-all duration-300 group-hover:border-purple-glow/25 group-hover:bg-white/[0.04] md:p-7">
+                <div className="premium-card rounded-2xl p-6 transition-all duration-300 md:p-7">
                   <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-warm">
                     {m.phase}
                   </span>
